@@ -1,0 +1,288 @@
+body {
+	background-image: url(img/sketch.png);
+	margin: 0;
+}
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.nav-list {
+    height: 12vh;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #333; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#333, #5b5b5b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#333, #5b5b5b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#333, #5b5b5b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#333, #5b5b5b); /* Standard syntax */
+}
+
+.nav-list li {
+    float: left;
+}
+
+.nav-list li a {
+	margin-top: 20px;
+    display: block;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav-list li a:hover {
+    background-color: #111;
+}
+
+#logo {
+    margin-top: 10px;
+    color: rgb(219, 182, 89);
+    font-family: 'Indie Flower', cursive;
+    font-weight: 700;
+    font-size: 2em; 
+}
+
+.grid {
+	width: 70vw;
+	height: 65vh;
+	margin: 0 auto;
+	margin-top: 25px;
+	text-align: center;
+	background-color: #fff;
+	padding: 0 50px 50px 50px;
+	border-radius: 50px;
+	border: 2px solid #777777;
+	box-shadow: 10px 15px 5px #cbcbcb;
+    background: #bbbbbb;
+}
+
+.grid h1 {
+	margin: 1%;
+	color: #5a6772;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 700;
+    font-size: 5em;
+	text-align: center;
+    padding: 2px 0px;
+}
+
+#questionarre h1 {
+	padding: 15px 0;
+}
+
+.grid #question {
+	font-family: sans-serif;
+	font-size: 30px;
+	color: #5a6772;
+}
+
+.buttons {
+	margin-top: 30px;
+}
+
+#btn0, #btn1, #btn2, #btn3 {
+	background-color: #778897;
+	width: 250px;
+	font-size: 20px;
+	color: #fff;
+	border: 1px solid #1d3c6a;
+	border-radius: 50px;
+	margin: 10px 40px 10px 0px;
+	padding: 10px 10px;
+}
+
+#progress {
+	color: #2b2b2b;
+	font-size: 18px;
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+	cursor: pointer;
+	background-color: #57636e;
+}
+
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+	outline: 0;
+}
+
+#score {
+	color: #57636e;
+	font-size: 30px;
+}
+
+/* The Modal (background) */
+.signUpModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.signUp-content {
+    background-color: #fefefe;
+    margin: 7% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.signUpClose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.signUpClose:hover,
+.signUpClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Sign Up Modal*/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+/*Log in Modal*/
+
+/* The Modal (background) */
+.loginModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.login-content {
+    background-color: #fefefe;
+    margin: 7% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.loginClose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.loginClose:hover,
+.loginClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.previousQuestion {
+    float: left;
+    margin-top: 15vh;
+    font-size: 3em;
+}
+
+.fa-backward {
+    float: left;
+    margin-top: 15px;
+}
+
+#diagnosis {
+    font-size: 4em;
+    margin: 25px 0 0 15px;
+}
+
+.loginBox {
+    padding: 5vh 3vw;
+    font-family: sans-serif;
+    margin: 5vh auto;
+    height: 20vw;
+    width: 65vw;
+    background-color: rgba(119, 119, 119, 0.8);
+}
+
+.loginBox img {
+    
+}

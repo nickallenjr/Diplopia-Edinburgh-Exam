@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Diplopia Exam</title>
+		<link rel="stylesheet" href="/examStyle.css">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<ul class="nav-list">
+			<li><a id="logo" href="/index.html">MyDiplopiaExam</a></li>
+			<li><a id="signoutBtn" href="/index.html">Sign Out</a></li>
+		</ul>
+		<!-- Exam Box -->
+		<div class="grid">
+			<div id="questionarre">
+				<h1>Edinburgh Algorithm</h1>
+				<hr style="margin-top: 20px;border-color: #777777">
+				<p id="question"></p>
+				<div id="buttons">
+					<button class="btn" id="btn0"><span id="choice0"></span></button>
+					<button class="btn" id="btn1"><span id="choice1"></span></button>
+				</div>
+				<hr style="margin-top: 50px;border-color: #777777">
+				<footer>
+				</footer>
+			</div>
+			<!-- Signup Modal -->
+			<div id="signUpModal" class="signUpModal">
+				<!-- Modal content -->
+				<div class="signUp-content">
+					<!-- Close Window Icon "X" -->
+					<span class="signUpClose">&times;</span>
+					<!-- Modal Body -->
+					<div class="container">
+						<label><b>Email</b></label>
+						<input type="text" placeholder="Enter Email" name="email" required>
+						<label><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						<label><b>Repeat Password</b></label>
+						<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+						<div class="clearfix">
+							<button type="button"  class="cancelbtn">Cancel</button>
+							<button type="submit" class="signupbtn">Sign Up</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Sign Up Modal Close -->
+			<!-- Login Modal -->
+			<div id="loginModal" class="loginModal">
+				<!-- Modal content -->
+				<div class="login-content">
+					<!-- Close Window Icon "X" -->
+					<span class="loginClose">&times;</span>
+					<!-- Modal Body -->
+					<div class="container">
+						<label><b>Username</b></label>
+						<input type="text" placeholder="Enter Username" name="uname" required>
+						<label><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						<button type="submit">Login</button>
+					</div>					
+				</div>
+			</div>
+			<!-- Login Modal Close -->
+			<script src="/app.js"></script>
+			<script src="/main.js"></script>
+		</body>
+	</html>
